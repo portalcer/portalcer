@@ -121,6 +121,7 @@ h2 {
   margin: 0 1.618em;
   top: 35%;
   opacity: 0;
+    font-size: 1.8rem;
 }
 .tl-content h1 {
   font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -133,9 +134,9 @@ h2 {
 .tl-year {
   position: absolute;
   top: 20%;
-font-weight: bold;
+  font-weight: bold;
   left: 50%;
-//  color: #2a95be;
+  color: skyblue;
   text-shadow: 2px 2px 5px #000000;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
@@ -145,7 +146,7 @@ font-weight: bold;
 }
 .tl-year p {
   font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 2.728rem;
+  font-size: 2.328rem;
   text-align: center;
   line-height: 1.5;
 }
