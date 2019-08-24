@@ -582,8 +582,9 @@ ul.nostyle i {
 }
 #meet-team .team-member {
   padding: 13px;
-  background: #eeeeee;
-  border: 2px solid #eeeeee;
+  background-color: rgba(238,238,238, 0.8);
+  opacity: 0.5;
+
   transition: border-color 400ms;
   -webkit-transition: border-color 400ms;
 }
