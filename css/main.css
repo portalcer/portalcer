@@ -8,6 +8,7 @@ Author URL: http://shapebootstrap.net
 /*************************
 *******Typography******
 **************************/
+
 body {
   padding-top: 100px;
   background: #fff;
@@ -577,7 +578,7 @@ ul.nostyle i {
   margin-bottom: 50px;
 }
 #meet-team {
-  padding: 100px 0;
+  padding: 10px 0;
 }
 #meet-team .team-member {
   padding: 13px;
