@@ -200,7 +200,7 @@ jQuery(function($) {'use strict';
 		$.ajax({
 			url: $(this).attr('action'),
 			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> E-mail está sendo enviado...</p>').fadeIn() );
 			}
 		}).done(function(data){
 			form_status.html('<p class="text-success">Obrigado por nos contatar. O mais cedo possível entraremos em contato.</p>').delay(3000).fadeOut();
