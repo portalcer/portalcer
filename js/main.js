@@ -203,7 +203,9 @@ jQuery(function($) {'use strict';
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> E-mail está sendo enviado...</p>').fadeIn() );
 			}
 		}).done(function(data){
-			form_status.html('<p class="text-success">Obrigado por nos contatar. O mais cedo possível entraremos em contato.</p>').delay(3000).fadeOut();
+			//form_status.html('<p class="text-success">Obrigado por nos contatar. O mais cedo possível entraremos em contato.</p>').delay(3000).fadeOut();
+			form_status.html('<p class="text-success">Detectamos um problema ao tentar enviar seu e-mail. Por favor, tente novamente mais tarde.</p>').delay(6000).fadeOut();
+		
 		});
 	});
 
