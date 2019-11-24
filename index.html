@@ -39,6 +39,9 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oswald'>
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto'>
 	
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
     <style>
       #location-map{
         background: #fff;
@@ -585,18 +588,25 @@
                           Quadra J1, Lote 11 - Setor Leste Universitário<br>
                           Goiânia, GO 74611-012<br>
                         </address>
-
-                        <form id="main-contact-form" name="contact-form" method="post" action="#">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" placeholder="Nome" required>
+                        <script type="text/javascript">var submitted=false;</script>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+                    onload="if(submitted) {window.location='index.html';}"></iframe>
+                        <form class="gform pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxqRNDEoPb66g4rCb75jegghitXQYM-jhBR04j00KwA2qxGGIkl/exec" method="post" target="hidden_iframe" 
+onsubmit="submitted=true;">
+                        <!--<form class="gform pure-form pure-form-stacked" method="POST" data-email="contato@portalcer.com.br"
+  action="https://script.google.com/macros/s/AKfycbxqRNDEoPb66g4rCb75jegghitXQYM-jhBR04j00KwA2qxGGIkl/exec">-->
+                            <div class="form-elements">
+                                <fieldset class="pure-group">
+                                    <input id="name" type="text" name="name" class="form-control" placeholder="Nome" required>
+                                </fieldset>
+                                <fieldset class="pure-group">
+                                    <input id="email" type="email" name="email" class="form-control" placeholder="Email" required>
+                                </fieldset>
+                                <fieldset class="pure-group">
+                                    <textarea id="message" name="message" class="form-control" rows="2" placeholder="Mensagem" required></textarea>
+                                </fieldset>
+                                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
                             </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" class="form-control" rows="2" placeholder="Mensagem" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
                         </form>
                     </div>
                 </div>
@@ -636,5 +646,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
 </body>
 </html>
