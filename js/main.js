@@ -46,9 +46,8 @@ jQuery(function($) {'use strict';
 
 	//Slider
 	$(document).ready(function() {
-		var time = 150000; // time in seconds
-
-	 	var $progressBar,
+		var time = 15; // time in seconds
+		var $progressBar,
 	      $bar, 
 	      $elem, 
 	      isPause, 
